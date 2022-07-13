@@ -7,13 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:contentDescription="@string/happy_birthday_text"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/androidparty" />
+
     <TextView
+        android:shadowColor="#000000"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:shadowRadius="20"
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:fontFamily="sans-serif-light"
-        android:text="Happy Birthday, Chanchal"
+        android:text="@string/happy_birthday_text"
         android:textSize="30sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,16 +37,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:fontFamily="sans-serif-light"
-        android:text="From Surya."
+        android:shadowColor="#000000"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:shadowRadius="20"
+        android:text="@string/from_name"
         android:textAlignment="viewEnd"
-        android:textSize="30sp"
         android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
